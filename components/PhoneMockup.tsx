@@ -40,7 +40,12 @@ export default function PhoneMockup() {
           </div>
 
           {/* Button */}
-          <button className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-[#f28c28] px-3 py-1 text-xs text-white shadow hover:bg-[#e57c1f] transition">
+          <button className="
+            w-full mt-2 inline-flex items-center gap-1.5
+            rounded-lg bg-[#f28c28] px-3 py-1 text-xs text-white
+            shadow hover:bg-[#e57c1f] transition justify-center
+          "
+          >
             <Image
               src={Vector}
               alt="Vector Icon"
