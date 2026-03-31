@@ -8,7 +8,7 @@ type Props = {
   center?: boolean;
 };
 
-export default function FeatureCard({ title, desc, icon, center = false }: Props) {
+export default function FeatureCard({ title, desc, icon, center = true }: Props) {
   return (
     <div
       className={`rounded-xl bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.06)]  ${

@@ -146,7 +146,7 @@ export default function HomePage() {
           height={620}
           className="absolute left-0 bottom-20 z-0 opacity-10 pointer-events-none"
         />
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
+        <div className="text-center md:text-start mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
           <div>
             <p className="mb-3 text-sm font-semibold text-[#d19a42]">انضم إلينا كتاجر</p>
             <h3 className="mb-4 text-3xl leading-tight text-[#221b17] md:text-3xl">
