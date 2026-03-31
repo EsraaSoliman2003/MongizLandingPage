@@ -105,13 +105,13 @@ export default function HomePage() {
               <div className="flex gap-5">
                 <a
                   href="#merchants"
-                  className="rounded-md bg-[#f2a33a] px-7 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5"
+                  className="rounded-lg bg-[#f2a33a] px-7 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5"
                 >
                   حمل التطبيق
                 </a>
                 <a
                   href="#merchants"
-                  className="rounded-md border border-gray-300 px-7 py-3 text-sm font-bold transition hover:-translate-y-0.5"
+                  className="rounded-lg border border-gray-300 px-7 py-3 text-sm font-bold transition hover:-translate-y-0.5"
                 >
                   انضم إلينا كتاجر
                 </a>
