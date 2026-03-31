@@ -86,7 +86,7 @@ export default function HomePage() {
 
       <section id="home" className="overflow-hidden">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-2 lg:px-10 lg:py-7">
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 text-center md:text-start">
             <p className="mb-3 text-md font-semibold text-[#c48736]">التطبيق الأول كليًا لك</p>
             <h1 className="mb-4 text-4xl leading-tight text-[#ee8a21] md:text-5xl lg:text-6xl font-semibold">
               منجز!
@@ -101,7 +101,7 @@ export default function HomePage() {
               ويعمل وفق منظومة تشغيل احترافية تعتمد على أسطول كهربائي مملوك بالكامل للشركة وكوادر مدربة.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4">
+            <div className="mt-8 flex flex-col gap-4 items-center md:items-start">
               <div className="flex gap-5">
                 <a
                   href="#merchants"
@@ -132,7 +132,7 @@ export default function HomePage() {
           <SectionTitle eyebrow="ما يميز منجز" title="تعرف على مميزات منجز" />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {topFeatures.map((item) => (
-              <FeatureCard key={item.title} {...item} />
+              <FeatureCard key={item.title} {...item} center />
             ))}
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
           alt="Background Sare3"
           width={620}
           height={620}
-          className="absolute left-0 z-0 opacity-10 pointer-events-none"
+          className="absolute left-0 bottom-20 z-0 opacity-10 pointer-events-none"
         />
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
           <div>
@@ -194,7 +194,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="absolute left-20">
+            <div className="lg:absolute lg:left-20">
               <Image
                 src="/screen3.png"
                 alt="Screen 1"

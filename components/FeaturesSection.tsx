@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const FeaturesSection = () => {
     return (
-        <section className="container py-12 px-2">
+        <section className="pb-12 lg:py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
 
                 {/* الكارد الأول */}
