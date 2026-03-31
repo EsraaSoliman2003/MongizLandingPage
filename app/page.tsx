@@ -56,8 +56,8 @@ const merchantFeatures = [
 
 export default function HomePage() {
   return (
-    <main dir="rtl" className="min-h-screen bg-[#f8f7f3] text-[#1f1a17] font-expo">
-      <header className="sticky top-0 z-50 bg-[#f8f7f3]/90 backdrop-blur">
+    <main className="min-h-screen bg-gradient-to-l from-[#FFEFDD] to-[#F5FFF7] text-[#1f1a17] font-expo">
+      <header className="sticky top-0 z-50 bg-gradient-to-l from-[#FFEFDD] to-[#F5FFF7]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
           <div className="text-2xl tracking-tight text-[#f28c28]">
             <Image
@@ -85,7 +85,7 @@ export default function HomePage() {
       </header>
 
       <section id="home" className="overflow-hidden">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-2 lg:px-10 lg:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-2 lg:px-10 lg:py-7">
           <div className="order-2 lg:order-1">
             <p className="mb-3 text-md font-semibold text-[#c48736]">التطبيق الأول كليًا لك</p>
             <h1 className="mb-4 text-4xl leading-tight text-[#ee8a21] md:text-5xl lg:text-6xl font-semibold">
@@ -138,7 +138,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="merchants" className="relative overflow-hidden bg-[#fcfcfb] py-20">
+      <section id="merchants" className="relative overflow-hidden bg-white py-20">
+        <Image
+          src="/BgSare3.png"
+          alt="Background Sare3"
+          width={620}
+          height={620}
+          className="absolute left-0 z-0 opacity-10 pointer-events-none"
+        />
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
           <div>
             <p className="mb-3 text-sm font-semibold text-[#d19a42]">انضم إلينا كتاجر</p>
@@ -169,32 +176,32 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-14">
-        <div className="">
-          <div className="relative overflow-hidden bg-gradient-to-l from-[#ef7f29] via-[#f0972f] to-[#f5b13e] px-8 py-12 shadow-2xl lg:px-14">
-            <div className="absolute -left-12 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-white/10" />
-            <div className="grid items-center gap-8 lg:grid-cols-2">
-              <div className="order-2 lg:order-1">
-                <Image
-                  src="/screen3.png"
-                  alt="Screen 1"
-                  width={400}   // adjust as needed
-                  height={800}  // adjust as needed
-                  className="mx-auto"
-                />
+      <section className="pt-[90px] pb-[60px] bg-white">
+        <div
+          className="relative bg-cover bg-center px-8 lg:px-14 py-20"
+          style={{ backgroundImage: "url('/BgSection.png')" }}
+        >
+          <div className="relative grid items-center gap-8 lg:grid-cols-2 mx-auto max-w-7xl">
+            <div className="text-white lg:max-w-xl">
+              <h3 className="mb-4 text-4xl md:text-5xl">منجز!</h3>
+              <h4 className="mb-4 text-2xl font-extrabold md:text-4xl">اشتري .. بيع .. أنجز ...</h4>
+              <p className="text-base leading-8 text-white/90 md:text-lg">
+                لا تفوت الفرصة للانضمام إلى منصة متعددة البائعين تربط بين العملاء والمتاجر والمطاعم عبر حلول
+                تقنية حديثة.
+              </p>
+              <div className="mt-8">
+                <StoreButtons />
               </div>
+            </div>
 
-              <div className="order-1 text-white lg:order-2 lg:max-w-xl">
-                <h3 className="mb-4 text-4xl md:text-5xl">منجز!</h3>
-                <h4 className="mb-4 text-2xl font-extrabold md:text-4xl">اشتري .. بيع .. أنجز ...</h4>
-                <p className="text-base leading-8 text-white/90 md:text-lg">
-                  لا تفوت الفرصة للانضمام إلى منصة متعددة البائعين تربط بين العملاء والمتاجر والمطاعم عبر حلول
-                  تقنية حديثة.
-                </p>
-                <div className="mt-8">
-                  <StoreButtons />
-                </div>
-              </div>
+            <div className="absolute left-20">
+              <Image
+                src="/screen3.png"
+                alt="Screen 1"
+                width={400}
+                height={800}
+                className="mx-auto"
+              />
             </div>
           </div>
         </div>

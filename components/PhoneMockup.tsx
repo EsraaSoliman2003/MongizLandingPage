@@ -6,7 +6,7 @@ export default function PhoneMockup() {
       <Image
         src="/screen1.png"
         alt="Screen 1"
-        width={400}   // adjust as needed
+        width={500}   // adjust as needed
         height={800}  // adjust as needed
         className="mx-auto"
       />
