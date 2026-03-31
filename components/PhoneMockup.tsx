@@ -41,18 +41,25 @@ export default function PhoneMockup() {
 
           {/* Button */}
           <button className="
-            w-full mt-2 inline-flex items-center gap-1.5
-            rounded-lg bg-[#f28c28] px-3 py-1 text-xs text-white
-            shadow hover:bg-[#e57c1f] transition justify-center
+            w-full mt-2 flex items-center gap-2
+            rounded-lg bg-[#f28c28] px-3 py-2 text-md text-white
+            hover:bg-[#e57c1f] transition justify-center
           "
           >
-            <Image
-              src={Vector}
-              alt="Vector Icon"
-              width={14}
-              height={14}
-            />
-            متوفر الآن
+            <div className=" relative w-3.5 h-3.5 mt-1">
+              <Image
+                src={Vector}
+                alt="Vector Icon"
+                fill
+                sizes="14px"
+                loading="lazy"
+                className=" object-cover"
+              />
+            </div>
+            <div className="">
+
+              متوفر الآن
+            </div>
           </button>
         </div>
 
