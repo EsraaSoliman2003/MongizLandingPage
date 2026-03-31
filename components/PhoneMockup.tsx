@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function PhoneMockup() {
   return (
-    <div className="relative h-[600px] w-full">
+    <div className="w-full max-w-lg mx-auto">
       <Image
-        src={"/screen1.png"}
+        src="/screen1.png"
         alt="Screen 1"
-        fill
-        className=""
+        width={400}   // adjust as needed
+        height={800}  // adjust as needed
+        className="mx-auto"
       />
     </div>
   );

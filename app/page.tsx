@@ -140,8 +140,6 @@ export default function HomePage() {
 
       <section id="merchants" className="relative overflow-hidden bg-[#fcfcfb] py-20">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
-          <DashboardMockup />
-
           <div>
             <p className="mb-3 text-sm font-semibold text-[#d19a42]">انضم إلينا كتاجر</p>
             <h3 className="mb-4 text-3xl leading-tight text-[#221b17] md:text-3xl">
@@ -161,31 +159,29 @@ export default function HomePage() {
             <a
               href="#contact"
               className="mt-8 inline-flex rounded-md border border-[#d68624] px-7 py-3 text-sm font-bold text-[#d68624]"
-              
+
             >
               انضم إلينا كتاجر
             </a>
           </div>
+
+          <DashboardMockup />
         </div>
       </section>
 
       <section className="py-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10">
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-l from-[#ef7f29] via-[#f0972f] to-[#f5b13e] px-8 py-12 shadow-2xl lg:px-14">
+        <div className="">
+          <div className="relative overflow-hidden bg-gradient-to-l from-[#ef7f29] via-[#f0972f] to-[#f5b13e] px-8 py-12 shadow-2xl lg:px-14">
             <div className="absolute -left-12 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-white/10" />
             <div className="grid items-center gap-8 lg:grid-cols-2">
               <div className="order-2 lg:order-1">
-                <div className="relative mx-auto h-[260px] w-[180px] rotate-[-22deg] rounded-[2.5rem] border-[10px] border-[#1a1a1a] bg-gradient-to-b from-white to-slate-100 shadow-2xl lg:mx-0">
-                  <div className="mx-auto mt-3 h-5 w-24 rounded-full bg-black" />
-                  <div className="p-4">
-                    <div className="mb-4 h-24 rounded-2xl bg-gradient-to-r from-sky-300 to-blue-500" />
-                    <div className="grid grid-cols-3 gap-2">
-                      <div className="h-12 rounded-xl bg-white shadow" />
-                      <div className="h-12 rounded-xl bg-white shadow" />
-                      <div className="h-12 rounded-xl bg-white shadow" />
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src="/screen3.png"
+                  alt="Screen 1"
+                  width={400}   // adjust as needed
+                  height={800}  // adjust as needed
+                  className="mx-auto"
+                />
               </div>
 
               <div className="order-1 text-white lg:order-2 lg:max-w-xl">
