@@ -4,5 +4,6 @@ import support from "./support.svg";
 import logo from "./logo.png";
 import sare3 from "./sare3.png";
 import goldSare3 from "./Group 1410124446.png";
+import Vector from "./Vector.svg";
 
-export { delivery, money, support, logo, sare3, goldSare3 };
+export { delivery, money, support, logo, sare3, goldSare3, Vector };
